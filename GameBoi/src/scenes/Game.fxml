@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="720" maxWidth="1280"  minHeight="-Infinity" minWidth="-Infinity" prefHeight="720" prefWidth="1280" styleClass="bodybg" stylesheets="@../img/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerG">
+   <children>
+      <HBox fx:id="oppField" alignment="CENTER" layoutX="336" layoutY="220" maxHeight="120" maxWidth="600" prefHeight="100" prefWidth="600" AnchorPane.leftAnchor="336" AnchorPane.rightAnchor="344" />
+      <HBox fx:id="currField" alignment="CENTER" layoutX="335" layoutY="350" maxHeight="148" maxWidth="600" prefHeight="100" prefWidth="600" AnchorPane.leftAnchor="336" AnchorPane.rightAnchor="344" />
+      <HBox fx:id="currHand" alignment="CENTER" layoutX="468" layoutY="600" maxHeight="157" maxWidth="345" prefHeight="157" prefWidth="336" AnchorPane.leftAnchor="468" AnchorPane.rightAnchor="476" />
+      <HBox fx:id="oppHand" alignment="CENTER" layoutX="467" layoutY="-53" maxHeight="157" maxWidth="374" prefHeight="127" prefWidth="343" AnchorPane.leftAnchor="468" AnchorPane.rightAnchor="476" />
+      <Pane layoutX="585" layoutY="486" prefHeight="127" prefWidth="50" />
+      <Pane layoutX="723" layoutY="470" prefHeight="100" prefWidth="81" />
+      <Pane layoutX="585" layoutY="80" prefHeight="83" prefWidth="67" />
+      <Pane layoutX="723" layoutY="113" prefHeight="100" prefWidth="81" />
+      <ImageView fitHeight="60" fitWidth="52" layoutX="663" layoutY="550" pickOnBounds="true" preserveRatio="true">
+         	 <image>
+           			 <Image url="@../img/health-premium.png" />
+        	 </image>
+      </ImageView>
+      <Label fx:id="hp1" alignment="CENTER" contentDisplay="CENTER" layoutX="666" layoutY="560" maxHeight="60" maxWidth="34" prefHeight="50" prefWidth="34" textAlignment="CENTER" textFill="WHITE">
+        	 <font>
+           			 <Font name="Rockwell Bold" size="21" />
+        	 </font>
+         	 <effect>
+           			 <DropShadow spread="0.57" />
+        	 </effect>
+      </Label>
+      <ImageView fitHeight="60" fitWidth="52" layoutX="663" layoutY="143" pickOnBounds="true" preserveRatio="true">
+         	 <image>
+          		 	 <Image url="@../img/health-premium.png" />
+         	 </image>
+      </ImageView>
+      <Label fx:id="hp2" alignment="CENTER" contentDisplay="CENTER" layoutX="666" layoutY="153" maxHeight="60" maxWidth="34" prefHeight="50" prefWidth="34" textAlignment="CENTER" textFill="WHITE">
+        	  <font>
+            		 <Font name="Rockwell Bold" size="21" />
+              </font>
+         	  <effect>
+          			 <DropShadow spread="0.57" />
+              </effect>
+      </Label>
+      <Label fx:id="currmana1" alignment="CENTER" contentDisplay="CENTER" layoutX="489" layoutY="516" maxHeight="60" maxWidth="34" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE">
+        	  <font>
+          			  <Font name="Rockwell Bold" size="16" />
+              </font>
+        	  <effect>
+           			  <DropShadow spread="0.42" />
+              </effect>
+      </Label>
+      <Label fx:id="maxmana1" alignment="CENTER" contentDisplay="CENTER" layoutX="516" layoutY="526" maxHeight="60" maxWidth="34" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE">
+         	  <font>
+         			  <Font name="Rockwell Bold" size="16" />
+              </font>
+         	  <effect>
+           			  <DropShadow spread="0.42" />
+        	  </effect>
+      </Label>
+      <Label fx:id="currmana2" alignment="CENTER" contentDisplay="CENTER" layoutX="489" layoutY="146" maxHeight="60" maxWidth="34" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE">
+       		  <font>
+          			  <Font name="Rockwell Bold" size="16" />
+         	  </font>
+        	  <effect>
+         		      <DropShadow spread="0.42" />
+         	  </effect>
+      </Label>
+      <Label fx:id="maxmana2" alignment="CENTER" contentDisplay="CENTER" layoutX="516" layoutY="156" maxHeight="60" maxWidth="34" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE">
+        	  <font>
+          			  <Font name="Rockwell Bold" size="16" />
+         	  </font>
+        	  <effect>
+        		      <DropShadow spread="0.42" />
+              </effect>
+      </Label>
+      <Button fx:id="endTurn" contentDisplay="CENTER" layoutX="983" layoutY="312" mnemonicParsing="false" prefHeight="34" prefWidth="87" style="-fx-background-color: transparent;">
+         	  <cursor>
+         	          <Cursor fx:constant="HAND" />
+              </cursor>
+      </Button>
+      <Pane fx:id="cardburnedpos" layoutX="37" layoutY="295" prefHeight="34" prefWidth="40" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34" layoutY="439" maxHeight="60" maxWidth="174" prefHeight="50" prefWidth="128" textAlignment="CENTER" textFill="WHITE">
+        	   <font>
+           			   <Font name="Rockwell Bold" size="21" />
+               </font>
+         	   <effect>
+        		       <DropShadow spread="1" />   <!-- could be 1.0    -->
+               </effect>
+      </Label>
+      <Pane fx:id="cardisplay" layoutX="1093" layoutY="247" prefHeight="23" prefWidth="25" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14" layoutY="151" maxHeight="157" maxWidth="233" prefHeight="157" prefWidth="177" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        	   <font>
+          			    <Font name="Rockwell Bold" size="25.0" />
+               </font>
+         	   <effect>
+          			    <DropShadow spread="1" />    <!-- could be 1.0    -->
+               </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1002" layoutY="422" maxHeight="120" maxWidth="233" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+       		  <font>
+           			  <Font name="Rockwell Bold" size="21" />
+         	  </font>
+         	  <effect>
+          			  <DropShadow spread="1" />    <!-- could be 1.0    -->
+              </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1002" layoutY="242" maxHeight="120" maxWidth="233" prefHeight="34" prefWidth="25" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         	  <font>
+         			  <Font name="Rockwell Bold" size="21" />
+              </font>
+         	 <effect>
+           			  <DropShadow spread="1" />	<!-- could be 1.0    -->
+        	 </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1093" layoutY="504" maxHeight="120" maxWidth="233" prefHeight="60" prefWidth="192" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         	  <font>
+         		      <Font name="Rockwell Bold" size="20" />
+              </font>
+        	 <effect>
+          			  <DropShadow spread="0.32" />
+        	 </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1070" layoutY="80" maxHeight="120" maxWidth="233" prefHeight="60" prefWidth="192" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        	 <font>
+                      <Font name="Rockwell Bold" size="20" />
+        	 </font>
+         	 <effect>
+           			  <DropShadow spread="0.32" />
+             </effect>
+      </Label>
+      <ImageView fitHeight="718" fitWidth="1278" layoutX="-5" layoutY="89" pickOnBounds="true" preserveRatio="true" visible="false">
+         	<image>
+           			  <Image url="@../img/vitoria-lol-png-2.png" />
+         	</image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412" layoutY="580" prefHeight="137" prefWidth="442" textFill="WHITE" visible="false" wrapText="true">
+         	<font>
+            		<Font name="Rockwell Bold" size="44" />
+            </font>
+            <effect>
+          		    <DropShadow spread="1" />    <!-- could be 1.0    -->
+            </effect>
+      </Label>
+      <Button alignment="BOTTOM_RIGHT" blendMode="MULTIPLY" disable="true" layoutX="14" layoutY="20" mnemonicParsing="false" prefHeight="676" prefWidth="1240" underline="true" visible="false">
+         	<font>
+           			 <Font name="Rockwell Bold" size="37" />
+            </font>
+	  </Button>
+  </children>
+</AnchorPane>
